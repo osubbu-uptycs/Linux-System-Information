@@ -168,6 +168,6 @@ if [[ -c /dev/tty ]]; then
 fi
 echo -e "\rTerminal:\t\t\t$TERM${TERMINAL:+ ($TERMINAL)}"
 
-PUBLIC_IP=$(curl ifconfig.me)
+PUBLIC_IP=$(curl -s ifconfig.me)
 echo -e "Public IP:\t\t\t$PUBLIC_IP"
 echo
